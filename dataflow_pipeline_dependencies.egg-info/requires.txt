@@ -1,0 +1,7 @@
+pysql-beam
+pymysql
+psycopg2
+apache-beam[gcp]
+gcsfs
+workflow
+google-cloud-storage

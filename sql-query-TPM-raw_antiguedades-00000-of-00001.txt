@@ -1,0 +1,1 @@
+SELECT DISTINCT * ,CONCAT(CAST("id" AS varchar(40))) AS concat_md5llave, CONCAT(CAST("id" AS varchar(40)),"nombre","descripcion",CAST("fechaAlta" AS varchar(40)),CAST("fechaUltimaModificacion" AS varchar(40))) AS concat_md5completo,'SII' AS audit_usuario,CURRENT_TIMESTAMP AS fecha_alta_gcp,CURRENT_TIMESTAMP AS fecha_ult_modificacion_gcp FROM public."sldAntiguedades" 
