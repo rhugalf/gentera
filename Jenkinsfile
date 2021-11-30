@@ -1,13 +1,15 @@
 pipeline {
-	 agent any
+	 agent none
 	
 	 stages {		
     		stage('Installing packages') {
+			agent {
+                		docker {
+                    			image 'python:2-alpine' 
+                		}
+            		}
             		steps {
-                		withPythonEnv('python3') {
- 					   sh 'python --version'
-				}
-                    		
+               		   	sh 'python --version'                    		
          		}
      		}
 	}
